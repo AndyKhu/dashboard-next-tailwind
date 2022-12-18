@@ -21,4 +21,28 @@
   .m-active .menu-item {
     @apply bg-gray-800 text-white;
   }
+  .primary{
+    @apply bg-primary-1  text-white hover:bg-primary-2
+  }
+  .success{
+    @apply bg-success-1 text-white hover:bg-success-2
+  }
+  .warning{
+    @apply bg-warning-1 text-white hover:bg-warning-2
+  }
+  .danger{
+    @apply bg-danger-1 text-white hover:bg-danger-2
+  }
+  .info{
+    @apply bg-info-1 text-white hover:bg-info-2
+  }
+  .disabled{
+    @apply !bg-gray-100 !text-gray-400 !border-gray-300 !shadow-gray-200
+  }
+  .primary-outline{
+    @apply border-primary-1 text-primary-1
+  }
+  .success-outline{
+    @apply border-success-1 text-success-1
+  }
 }
