@@ -19,11 +19,11 @@ const Admin = ({ children }: { children: ReactNode }) => {
       },[]);
     if(activeMenu){
         return (
-            <div className="flex w-screen h-screen overflow-hidden">
+            <div className="flex w-screen h-screen overflow-hidden text-gray-700">
                 <Sidebar></Sidebar>
                 <div className="flex flex-col w-full h-full">
                     <Header title={activeMenu.child == ""?activeMenu.value:activeMenu.child}></Header>
-                    <div className="h-full bg-gray-200 overflow-y-auto">
+                    <div className="h-full bg-slate-200 overflow-y-auto">
                         {children}
                     </div>
                 </div>
