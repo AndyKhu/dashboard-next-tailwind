@@ -1,3 +1,4 @@
+import Admin from '@layout/Admin'
 import Head from 'next/head'
 
 export default function Home() {
@@ -15,3 +16,4 @@ export default function Home() {
     </>
   )
 }
+Home.layout = Admin
