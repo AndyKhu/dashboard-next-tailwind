@@ -76,13 +76,13 @@ export default function Home() {
             <CardDashboard title="Order" value="1,235" icon="FiArchive"/>
           </div>
           <div className='w-full sm:w-1/2 md:w-1/4'>
-            <CardDashboard title="Revenue" value="$35,723" icon="FiInbox"/>
+            <CardDashboard title="Revenue" value="$35,723" icon="FiInbox" iconC='success'/>
           </div>
           <div className='w-full sm:w-1/2 md:w-1/4'>
-            <CardDashboard title="Average Price" value="$16.2" icon="FiLifeBuoy"/>
+            <CardDashboard title="Average Price" value="$16.2" icon="FiLifeBuoy" iconC="warning"/>
           </div>
           <div className='w-full sm:w-1/2 md:w-1/4'>
-            <CardDashboard title="Earning" value="$34,252" iconfa="FaWallet"/>
+            <CardDashboard title="Earning" value="$34,252" iconfa="FaWallet" iconC="danger"/>
           </div>
           <div className='w-full md:w-1/2'>
             <div className='p-2'>
