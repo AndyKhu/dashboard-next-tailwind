@@ -2,6 +2,7 @@ import Header from "@components/Header";
 import Sidebar from "@components/sidebar/Sidebar";
 import { useAppDispatch, useAppSelector } from '@state/hook'
 import { setActiveMenu } from '@state/initialSlice'
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { ReactNode, useEffect } from "react"
 const Admin = ({ children }: { children: ReactNode }) => {
@@ -19,15 +20,20 @@ const Admin = ({ children }: { children: ReactNode }) => {
       },[]);
     if(activeMenu){
         return (
-            <div className="flex w-screen h-screen overflow-hidden text-gray-700">
-                <Sidebar></Sidebar>
-                <div className="flex flex-col w-full h-full">
-                    <Header title={activeMenu.child == ""?activeMenu.value:activeMenu.child}></Header>
-                    <div className="h-full bg-slate-200 overflow-y-auto">
-                        {children}
+            <>
+                <Head>
+                    <title>{activeMenu.child == ""?activeMenu.value:activeMenu.child}</title>
+                </Head>
+                <div className="flex w-screen h-screen overflow-hidden text-gray-700">
+                    <Sidebar></Sidebar>
+                    <div className="flex flex-col w-full h-full">
+                        <Header title={activeMenu.child == ""?activeMenu.value:activeMenu.child}></Header>
+                        <div className="h-full bg-slate-200 overflow-y-auto">
+                            {children}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </>
         );
     }else{
         return (<div>Loading..</div>)
