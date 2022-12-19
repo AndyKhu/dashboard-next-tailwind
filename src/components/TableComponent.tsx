@@ -40,7 +40,7 @@ const TableComponent = ({header,data,bordered,ishoverable,zebra,color}:Props) =>
             <table className="w-full h-full text-left text-sm">
                 <thead>
                     <tr className={`border-b ${colors.border} ${ishoverable||zebra?colors.header:""}`}>
-                        <th className="p-2 font-medium">#</th>
+                        <th className="p-2 font-medium">index</th>
                         {th}
                     </tr>
                 </thead>
