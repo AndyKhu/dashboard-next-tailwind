@@ -27,6 +27,9 @@ const Sidebar = () => {
             title: 'checkbox'
           },
           {
+            title: 'table'
+          },
+          {
             title: 'form'
           }
         ]
