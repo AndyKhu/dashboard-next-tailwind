@@ -40,7 +40,7 @@ const Table = () => {
                 <Card className="p-3 h-full">
                     <Card.main>
                         <h2 className="font-medium text-sm text-gray-700 mb-1">Bordered Table</h2>
-                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that's easy to scan, so that users can look for patterns and insights</p>
+                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that easy to scan, so that users can look for patterns and insights</p>
                         <TableComponent bordered header={header} data={data}/>
                     </Card.main>
                 </Card>
@@ -49,7 +49,7 @@ const Table = () => {
                 <Card className="p-3 h-full">
                     <Card.main>
                         <h2 className="font-medium text-sm text-gray-700 mb-1">Hoverable Rows</h2>
-                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that's easy to scan, so that users can look for patterns and insights</p>
+                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that easy to scan, so that users can look for patterns and insights</p>
                         <TableComponent ishoverable header={header} data={data}/>
                     </Card.main>
                 </Card>
@@ -58,7 +58,7 @@ const Table = () => {
                 <Card className="p-3 h-full">
                     <Card.main>
                         <h2 className="font-medium text-sm text-gray-700 mb-1">Zebra Table</h2>
-                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that's easy to scan, so that users can look for patterns and insights</p>
+                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that easy to scan, so that users can look for patterns and insights</p>
                         <TableComponent zebra header={header} data={data}/>
                     </Card.main>
                 </Card>
@@ -67,7 +67,7 @@ const Table = () => {
                 <Card className="p-3 h-full">
                     <Card.main>
                         <h2 className="font-medium text-sm text-gray-700 mb-1">Colorable Table</h2>
-                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that's easy to scan, so that users can look for patterns and insights</p>
+                        <p className="font-normal text-sm text-gray-500 mb-4">Tables display information in a way that easy to scan, so that users can look for patterns and insights</p>
                         <TableComponent color={{header:"bg-blue-600 text-white",border:"border-white",zebra1:"odd:bg-blue-50",zebra2:"even:bg-blue-200",hover:"hover:bg-blue-300 text-blue-800"}} bordered ishoverable zebra header={header} data={data}/>
                     </Card.main>
                 </Card>
